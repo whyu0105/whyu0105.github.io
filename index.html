@@ -15,10 +15,9 @@
 
             background-color: #FFF0F5;
 
-            /* 使用 Flex 实现水平居中（横着排版） */
             display: flex;
-            justify-content: center; /* 水平居中 */
-            align-items: center;     /* 垂直居中 */
+            justify-content: center;
+            align-items: center;
 
             font-family: 
                 -apple-system, 
@@ -28,20 +27,68 @@
                 sans-serif;
         }
 
-        /* 标题文字样式 */
+        /* 页面内容容器（用于竖向排列） */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+        }
+
+        /* 标题样式 */
         h1 {
             color: #FFC0CB;
-            font-size: clamp(24px, 6vw, 48px); /* 手机端自适应字体 */
+            font-size: clamp(24px, 6vw, 48px);
             font-weight: 600;
             letter-spacing: 4px;
             margin: 0;
             text-align: center;
         }
+
+        /* 按钮样式 */
+        .nav-btn {
+            width: 220px;
+            padding: 14px 0;
+
+            background-color: #FFFACD;
+            color: #FFE4C4;
+
+            font-size: 16px;
+            letter-spacing: 2px;
+
+            border: none;
+            border-radius: 12px;
+
+            cursor: pointer;
+            text-align: center;
+        }
+
+        /* 悬停效果（很轻） */
+        .nav-btn:hover {
+            opacity: 0.85;
+        }
     </style>
 </head>
 
 <body>
-    <h1>猪猪饲养手册</h1>
+    <div class="container">
+        <h1>猪猪饲养手册</h1>
+
+        <button class="nav-btn" onclick="location.href='chap1/'">
+            chapter 1 猪の诞生
+        </button>
+
+        <button class="nav-btn" onclick="location.href='chap2/'">
+            chapter 2 成长经历
+        </button>
+
+        <button class="nav-btn" onclick="location.href='chap3/'">
+            chapter 3 心理健康
+        </button>
+
+        <button class="nav-btn" onclick="location.href='chap4/'">
+            chapter 4 猪之作品
+        </button>
+    </div>
 </body>
 </html>
-
