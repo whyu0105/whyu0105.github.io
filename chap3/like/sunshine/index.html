@@ -1,1 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <!-- 手机端自适应关键 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 我想做你的太阳 </title>
 
+    <style>
+        /* 页面整体样式 */
+        body {
+            margin: 0;
+            padding: 40px 0;        /* 给上下留空间 */
+            min-height: 100vh;      /* 不是强制 height */
+        
+            background-color: #FFF0F5;
+        
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* 改这里！ */
+        
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "PingFang SC",
+                "Microsoft YaHei",
+                sans-serif;
+        }
+
+
+        /* 页面内容容器（用于竖向排列） */
+        .container {
+            padding-top: 56px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+        }
+
+        /* 标题样式 */
+        h1 {
+            color: #FFC0CB;
+            font-size: clamp(24px, 6vw, 48px);
+            font-weight: 600;
+            letter-spacing: 4px;
+            margin: 0;
+            text-align: center;
+        }
+        h1 span {
+            display: block;
+        }   
+
+        /* 按钮样式 */
+        .nav-btn {
+            width: 220px;
+            padding: 16px 0;          /* 稍微加高按钮 */
+        
+            background-color: #FFFACD;
+            color: #B5A18A;
+        
+            font-size: 18px;          /* 字体变大 */
+            letter-spacing: 2.5px;    /* 间距微调更舒展 */
+            line-height: 1.4;         /* 让字不挤 */
+        
+            border: none;
+            border-radius: 14px;      /* 圆角略增，匹配“大一点”的感觉 */
+        
+            cursor: pointer;
+            text-align: center;
+        }
+
+
+        /* 悬停效果（很轻） */
+        .nav-btn:hover {
+            opacity: 0.85;
+        }
+
+        .main-img {
+            width: 200px;        /* 控制大小 */
+            max-width: 80vw;     /* 手机端自适应 */
+            margin: 16px 0 24px; /* 上下间距 */
+        
+            border-radius: 16px; /* 如果是插画会很好看 */
+        }
+        
+        /* 右上角返回按钮 */
+        .back-btn {
+            position: fixed;
+            top: 16px;
+            right: 16px;
+        
+            padding: 8px 14px;
+            font-size: 14px;
+            letter-spacing: 1px;
+        
+            background-color: #FFE7EF;
+            color: #FFB4BD;
+        
+            border: none;
+            border-radius: 999px;   
+        
+            cursor: pointer;
+            z-index: 1000;          
+        
+            opacity: 0.9;
+        }
+        
+        /* 轻微悬停反馈 */
+        .back-btn:hover {
+            opacity: 1;
+        }
+
+        .text-box {
+            width: 80%;
+            max-width: 600px;
+        
+            padding: 16px 20px;
+        
+            border: 2px solid #FFA8C3;   /* 可见边框 */
+            border-radius: 12px;         /* 圆角 */
+        
+            background-color: #FFFFFF;
+        
+            color: #555;
+            font-size: 16px;
+            line-height: 1.6;
+        
+            margin: 20px auto;           /* 上下留空并居中 */
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+
+<body>
+    <button class="back-btn" onclick="location.href='/'">
+        主页面
+    </button>
+    <div class="container">
+        <div class="text-box">
+            猪猪经常每天充满元气，像小太阳一样温暖大家。如果您的猪猪带回家之后一直响，应该是喜欢您想亲近的表现哦~这时候不需要担心，只需要保护好自己的听力就好啦
+        </div>
+      
+        <h1>
+            <span>怎么忍心这样对一只猪TT</span>
+        </h1>
+
+        <img src="heng.jpg" alt="猪需要很多很多爱" class="main-img">
+        
+        <button class="nav-btn" onclick="location.href='../'">
+            重新选择
+        </button>
+    </div>
+</body>
+</html>
