@@ -1,1 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <!-- 手机端自适应关键 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 如果你愿意一层一层地剥开猪的心 </title>
 
+    <style>
+        /* 页面整体样式 */
+        body {
+            margin: 0;
+            padding: 40px 0;       
+            min-height: 100vh;     
+        
+            background-color: #FFF0F5;
+        
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "PingFang SC",
+                "Microsoft YaHei",
+                sans-serif;
+        }
+
+
+        /* 页面内容容器（用于竖向排列） */
+        .container {
+            padding-top: 56px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+        }
+
+        /* 标题样式 */
+        h1 {
+            color: #FFC0CB;
+            font-size: clamp(24px, 6vw, 48px);
+            font-weight: 600;
+            letter-spacing: 4px;
+            margin: 0;
+            text-align: center;
+        }
+
+        /* 按钮样式 */
+        .nav-btn0 {
+            width: 220px;
+            padding: 16px 0;          
+        
+            background-color: #FFDDDD;
+            color: #FF9D9D;
+        
+            font-size: 18px;          
+            letter-spacing: 2.5px;    
+            line-height: 1.4;        
+        
+            border: none;
+            border-radius: 14px;     
+        
+            cursor: pointer;
+            text-align: center;
+        }
+
+
+        /* 悬停效果（很轻） */
+        .nav-btn1:hover {
+            opacity: 0.85;
+        }
+
+        .nav-btn1 {
+            width: 220px;
+            padding: 16px 0;          
+        
+            background-color: #FFE7CF;
+            color: #FFB870;
+        
+            font-size: 18px;          
+            letter-spacing: 2.5px;    
+            line-height: 1.4;        
+        
+            border: none;
+            border-radius: 14px;     
+        
+            cursor: pointer;
+            text-align: center;
+        }
+
+
+        /* 悬停效果（很轻） */
+        .nav-btn1:hover {
+            opacity: 0.85;
+        }
+
+        .nav-btn2 {
+            width: 220px;
+            padding: 16px 0;          
+        
+            background-color: #DEFFEF;
+            color: #89F3C4;
+        
+            font-size: 18px;          
+            letter-spacing: 2.5px;    
+            line-height: 1.4;        
+        
+            border: none;
+            border-radius: 14px;     
+        
+            cursor: pointer;
+            text-align: center;
+        }
+
+
+        /* 悬停效果（很轻） */
+        .nav-btn2:hover {
+            opacity: 0.85;
+        }
+
+        .nav-btn3 {
+            width: 220px;
+            padding: 16px 0;          
+        
+            background-color: #DEF6FF;
+            color: #85C6FF;
+        
+            font-size: 18px;          
+            letter-spacing: 2.5px;    
+            line-height: 1.4;        
+        
+            border: none;
+            border-radius: 14px;     
+        
+            cursor: pointer;
+            text-align: center;
+        }
+
+
+        /* 悬停效果（很轻） */
+        .nav-btn3:hover {
+            opacity: 0.85;
+        }
+
+        .nav-btn4 {
+            width: 220px;
+            padding: 16px 0;          
+        
+            background-color: #F9E7FF;
+            color: #E1BDF0;
+        
+            font-size: 18px;          
+            letter-spacing: 2.5px;    
+            line-height: 1.4;        
+        
+            border: none;
+            border-radius: 14px;     
+        
+            cursor: pointer;
+            text-align: center;
+        }
+
+
+        /* 悬停效果（很轻） */
+        .nav-btn4:hover {
+            opacity: 0.85;
+        }
+
+        /* 右上角返回按钮 */
+        .back-btn {
+            position: fixed;
+            top: 16px;
+            right: 16px;
+        
+            padding: 8px 14px;
+            font-size: 14px;
+            letter-spacing: 1px;
+        
+            background-color: #FFE7EF;
+            color: #FFB4BD;
+        
+            border: none;
+            border-radius: 999px;   
+        
+            cursor: pointer;
+            z-index: 1000;          
+        
+            opacity: 0.9;
+        }
+        
+        /* 轻微悬停反馈 */
+        .back-btn:hover {
+            opacity: 1;
+        }
+
+    </style>
+</head>
+
+<body>
+    <button class="back-btn" onclick="location.href='/'">
+        主页面
+    </button>
+
+    <div class="container">
+        <h1> ？</h1>
+
+        <button class="nav-btn0" onclick="location.href='like/'">
+            A. 超级超级喜欢
+        </button>
+
+        <button class="nav-btn1" onclick="location.href='like/'">
+            B. 非常非常喜欢
+        </button>
+
+        <button class="nav-btn2" onclick="location.href='like/'">
+            C. 一万分的喜欢
+        </button>
+
+        <button class="nav-btn3" onclick="location.href='heng/'">
+            D. 就一点点喜欢吧！
+        </button>
+
+        <button class="nav-btn4" onclick="location.href='heng/'">
+            D. 就一点点喜欢吧！
+        </button>
+    </div>
+</body>
+</html>
