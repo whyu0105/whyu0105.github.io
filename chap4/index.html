@@ -10,22 +10,23 @@
         /* 页面整体样式 */
         body {
             margin: 0;
-            padding: 0;
-            height: 100vh;
-
+            padding: 40px 0;        /* 给上下留空间 */
+            min-height: 100vh;      /* 不是强制 height */
+        
             background-color: #FFF0F5;
-
+        
             display: flex;
             justify-content: center;
-            align-items: center;
-
-            font-family: 
-                -apple-system, 
-                BlinkMacSystemFont, 
-                "PingFang SC", 
-                "Microsoft YaHei", 
+            align-items: flex-start; /* 改这里！ */
+        
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "PingFang SC",
+                "Microsoft YaHei",
                 sans-serif;
         }
+
 
         /* 页面内容容器（用于竖向排列） */
         .container {
@@ -74,7 +75,7 @@
     
 <body>
   <div class="container">
-    <h1>出演作品索引</h1>
+    <h1> 你也来看猪猪吗？</h1>
 
     <!-- 每个按钮一项 -->
     <button class="work-btn" onclick="location.href='https://www.bilibili.com/bangumi/play/ep811908?spm_id_from=333.337.0.0&from_spmid=666.25.episode.0'">
