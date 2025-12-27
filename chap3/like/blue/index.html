@@ -1,1 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <!-- 手机端自适应关键 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 你说蓝色是你最爱的颜色 你说如果没有爱那又如何 </title>
 
+    <style>
+        /* 页面整体样式 */
+        body {
+            margin: 0;
+            padding: 40px 0;        /* 给上下留空间 */
+            min-height: 100vh;      /* 不是强制 height */
+        
+            background-color: #FFF0F5;
+        
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* 改这里！ */
+        
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "PingFang SC",
+                "Microsoft YaHei",
+                sans-serif;
+        }
+
+
+        /* 页面内容容器（用于竖向排列） */
+        .container {
+            padding-top: 56px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+        }
+
+        /* 标题样式 */
+        h1 {
+            color: #FFC0CB;
+            font-size: clamp(24px, 6vw, 48px);
+            font-weight: 600;
+            letter-spacing: 4px;
+            margin: 0;
+            text-align: center;
+        }
+        h1 span {
+            display: block;
+        }   
+
+        /* 正文样式 */
+        .text {
+            color: #777;
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 1.7;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+
+        /* 按钮样式 */
+        .nav-btn {
+            width: 280px;
+            padding: 16px 0;          /* 稍微加高按钮 */
+        
+            background-color: #FFFACD;
+            color: #B5A18A;
+        
+            font-size: 18px;          /* 字体变大 */
+            letter-spacing: 2.5px;    /* 间距微调更舒展 */
+            line-height: 1.4;         /* 让字不挤 */
+        
+            border: none;
+            border-radius: 14px;      /* 圆角略增，匹配“大一点”的感觉 */
+        
+            cursor: pointer;
+            text-align: center;
+        }
+
+
+        /* 悬停效果（很轻） */
+        .nav-btn:hover {
+            opacity: 0.85;
+        }
+
+        .main-img {
+            width: 280px;        /* 控制大小 */
+            max-width: 80vw;     /* 手机端自适应 */
+            margin: 16px 0 24px; /* 上下间距 */
+        
+            border-radius: 16px; /* 如果是插画会很好看 */
+        }
+        
+        /* 右上角返回按钮 */
+        .back-btn {
+            position: fixed;
+            top: 16px;
+            right: 16px;
+        
+            padding: 8px 14px;
+            font-size: 14px;
+            letter-spacing: 1px;
+        
+            background-color: #FFE7EF;
+            color: #FFB4BD;
+        
+            border: none;
+            border-radius: 999px;   
+        
+            cursor: pointer;
+            z-index: 1000;          
+        
+            opacity: 0.9;
+        }
+        
+        /* 轻微悬停反馈 */
+        .back-btn:hover {
+            opacity: 1;
+        }
+
+        .text-box {
+            width: 80%;
+            max-width: 600px;
+        
+            padding: 16px 20px;
+        
+            border: 4px solid #FFC0CB;   /* 可见边框 */
+            border-radius: 12px;         /* 圆角 */
+        
+            background-color: #FFF0F5;
+        
+            color: #555;
+            font-size: 16px;
+            line-height: 1.6;
+        
+            margin: 20px auto;           /* 上下留空并居中 */
+            box-sizing: border-box;
+            box-shadow: 0 6px 16px rgba(119, 194, 231, 0.25);
+        }
+
+    </style>
+</head>
+
+<body>
+    <button class="back-btn" onclick="location.href='../'">
+        返回
+    </button>
+    <div class="container">
+        <div class="text-box">
+            猪猪虽然大部分时候都很阳光，但其实有一颗脆弱敏感的心🥺 在饲养的同时也请关注猪猪的心理状态哦，可能他会悄悄觉得自己不够好...猪猪需要那么那么多的爱与安全感
+        </div>
+
+        <p class="text"> 珍猪的眼泪像珍珠 </p>
+        <video
+            src="1.mp4"
+            controls
+            style="width: 280px; max-width: 80vm; border-radius: 12px;">
+        </video>
+        
+    </div>
+</body>
+</html>
