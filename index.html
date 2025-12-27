@@ -10,22 +10,23 @@
         /* 页面整体样式 */
         body {
             margin: 0;
-            padding: 0;
-            height: 100vh;
-
+            padding: 40px 0;        /* 给上下留空间 */
+            min-height: 100vh;      /* 不是强制 height */
+        
             background-color: #FFF0F5;
-
+        
             display: flex;
             justify-content: center;
-            align-items: center;
-
-            font-family: 
-                -apple-system, 
-                BlinkMacSystemFont, 
-                "PingFang SC", 
-                "Microsoft YaHei", 
+            align-items: flex-start; /* 改这里！ */
+        
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "PingFang SC",
+                "Microsoft YaHei",
                 sans-serif;
         }
+
 
         /* 页面内容容器（用于竖向排列） */
         .container {
