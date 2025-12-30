@@ -26,33 +26,7 @@
                 "Microsoft YaHei",
                 sans-serif;
         }
-        #pwd {
-          width: 220px;
-          max-width: 80vw;
-          padding: 12px 14px;
-          font-size: 16px;
-          border-radius: 12px;
-          border: 4px solid #FFC0CB;
-          outline: none;
-        }
-        
-        #pwd:focus {
-          border-color: #FF92A5;
-          box-shadow: 0 0 0 3px rgba(255,105,180,0.2);
-        }
-        
-        #pwd::placeholder {
-          color: #aaa;
-        }
 
-        .text {
-            color: #777;
-            font-size: 17px;
-            font-weight: 400;
-            line-height: 1.7;
-            letter-spacing: 1px;
-            text-align: center;
-        }
 
         /* 页面内容容器（用于竖向排列） */
         .container {
@@ -76,7 +50,7 @@
         /* 按钮样式 */
         .nav-btn {
             width: 220px;
-            padding: 15px 0;          /* 稍微加高按钮 */
+            padding: 16px 0;          /* 稍微加高按钮 */
         
             background-color: #FFFACD;
             color: #B5A18A;
@@ -104,22 +78,21 @@
     <div class="container">
         <h1>猪猪饲养手册</h1>
 
-        <p class="text"> 请输入密码~ </p>
-        <input id="pwd" type="password" placeholder="Password">
-        <button class="nav-btn" onclick="check()">确认</button>
-        <p id="msg" style="color:#777; font-size:17px;"></p>
-        </div>
+        <button class="nav-btn" onclick="location.href='chap1/'">
+            chapter 1 猪の诞生
+        </button>
 
-        <script>
-        function check() {
-            const pwd = document.getElementById("pwd").value;
-            if (pwd === "50105002") {
-                window.location.href = "site/index.html";
-            } else {
-                document.getElementById("msg").innerText = "密码错误";
-            }
-        }
-        </script>
+        <button class="nav-btn" onclick="location.href='chap2/'">
+            chapter 2 成长相册
+        </button>
+
+        <button class="nav-btn" onclick="location.href='chap3/'">
+            chapter 3 心情记录
+        </button>
+
+        <button class="nav-btn" onclick="location.href='chap4/'">
+            chapter 4 猪之作品
+        </button>
 
     </div>
 </body>
