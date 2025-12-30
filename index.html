@@ -27,12 +27,12 @@
                 sans-serif;
         }
         #pwd {
-          width: 240px;
+          width: 220px;
           max-width: 80vw;
           padding: 12px 14px;
           font-size: 16px;
           border-radius: 12px;
-          border: 1.5px solid #FFC0CB;
+          border: 4px solid #FFC0CB;
           outline: none;
         }
         
@@ -107,17 +107,17 @@
         <p class="text"> 请输入密码~ </p>
         <input id="pwd" type="password" placeholder="Password">
         <button class="nav-btn" onclick="check()">确认</button>
-        <p id="msg" style="color:#FFC0CB;"></p>
+        <p id="msg" style="color:#777; font-size:17px;"></p>
         </div>
 
         <script>
         function check() {
-        const pwd = document.getElementById("pwd").value;
-        if (pwd === "50105002") {
-            window.location.href = "site/index.html";
-        } else {
-            document.getElementById("msg").innerText = "密码错误";
-        }
+            const pwd = document.getElementById("pwd").value;
+            if (pwd === "50105002") {
+                window.location.href = "site/index.html";
+            } else {
+                document.getElementById("msg").innerText = "密码错误";
+            }
         }
         </script>
 
