@@ -162,6 +162,21 @@
             box-sizing: border-box;
             box-shadow: 0 6px 16px rgba(119, 194, 231, 0.25);
         }
+        .play-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: none;
+            background-color: #FFC0CB; /* 浅粉色 */
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(255, 192, 203, 0.6);
+        }
+
+        .play-btn:hover {
+            background-color: #FFB6C1;
+        }
 
     </style>
 </head>
@@ -196,6 +211,8 @@
 
 
         <p class="text"> ▶行走的鱼 </p>
+        <audio id="audio" src="music.mp3"></audio>
+        <button class="play-btn" onclick="togglePlay()">▶</button>
         <div class="text-box1">
             <p>在这本书里，凝聚了我各种各样的心情与想法。
             我非常喜欢和大家聊天、交流的时间。
@@ -227,9 +244,24 @@
         <video
             src="4.mp4"
             controls
+            muted
             style="width: 280px; max-width: 80vm; border-radius: 12px;">
         </video>
         
     </div>
+    <script>
+        const audio = document.getElementById("audio");
+        const btn = document.querySelector(".play-btn");
+
+        function togglePlay() {
+            if (audio.paused) {
+            audio.play();
+            btn.textContent = "⏸";
+            } else {
+            audio.pause();
+            btn.textContent = "▶";
+            }
+        }
+        </script>
 </body>
 </html>
